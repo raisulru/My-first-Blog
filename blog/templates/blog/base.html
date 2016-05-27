@@ -1,0 +1,60 @@
+{% load staticfiles %}
+<html>
+    <head>
+        <title>Oasis IT</title>
+        <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Metal+Mania' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{% static 'css/main.css' %}">
+        <link rel="shortcut icon" href="img/icon.png">
+    </head>
+    <body>
+        <div class="page-header">
+            {% if user.is_authenticated %}
+                <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+            {% endif %}
+            <h1><a href="/">Oasis IT's Blog</a> <sub><small>Achieve Value</small></sub></h1>
+            <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="3000" data-pause="false">
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              
+              <div class="carousel-title">
+                <h2>Encase The Goal</h2>
+                
+              </div>
+            </div>
+            <div class="item">
+              
+              <div class="carousel-title">
+                
+                <h2>Enrich With Power</h2>
+                
+              </div>
+            </div>
+            <div class="item">
+              
+              <div class="carousel-title">
+               
+                <h2>Endeavor To Touch</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="text-right"><small>Made by Oasis ITs Developer<br>built in django</small></p>
+
+        </div>
+        <div class="content container">
+            <div class="row">
+                <div class="col-md-10">
+                {% block content %}
+                {% endblock %}
+                </div>
+            </div>
+        </div>
+        <footer class="text-center">Copy Right &copy; Oasis IT | All Right Reserved</footer>
+    </body>
+
+</html>

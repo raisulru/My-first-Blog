@@ -1,0 +1,53 @@
+
+.page-header h1 a {
+    color: #FCA205;
+    font-family: 'Poiret One', cursive;
+}
+#myCarousel{
+	width: 50%;
+}
+.page-header {
+    background-color: #CF313B;
+    margin-top: 0;
+    padding: 6% 10% 7% 20%;
+    color: #fff;
+}
+.page-header p{
+	color: #fff;
+}
+.page-header .caption{
+	float: right;
+}
+.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+    color: #ffffff;
+    font-size: 36pt;
+    text-decoration: none;
+}
+
+.post-form textarea, .post-form input {
+    width: 100%;
+}
+
+.top-menu, .top-menu:hover, .top-menu:visited {
+    color: #ffffff;
+    float: right;
+    font-size: 26pt;
+    margin-right: 20px;
+}
+
+.content h1{
+ 
+}
+
+.content .date{
+	text-align: right;
+}
+
+.post h1 a, .post h1 a:visited {
+    color: #000000;
+}
+footer {
+	background-color: #CF313B;
+	padding: 3%;
+    color: #fff;
+}
